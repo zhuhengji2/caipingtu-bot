@@ -1,11 +1,14 @@
 # 模型权重（208MB，用 download_model.py 下载）
 models/*.onnx
 models/*.part*
+scripts/models/*.onnx
+scripts/models/*.part*
 
-# 客户项目素材，不入库
+# 客户项目素材，不入库；但风格基准图要随仓库分发
 reference/*.jpg
 reference/*.png
 reference/*.jpeg
+!reference/基准图-*.jpg
 samples/*
 !samples/.gitkeep
 
