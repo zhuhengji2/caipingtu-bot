@@ -25,6 +25,13 @@ curl -fsSL https://raw.githubusercontent.com/zhuhengji2/caipingtu-bot/main/insta
 脚本会自动做四件事：下载本仓库 → 装到 `~/.workbuddy/skills/caipingtu` → 装 Python 依赖 → 下载 208MB 修复模型。
 **重启 AI 助手，发一张线稿说「做彩平图」就生效了。**
 
+> 国内拉 `raw.githubusercontent.com` 慢或超时，把命令里的域名加个镜像前缀即可：
+> `irm https://gh-proxy.com/https://raw.githubusercontent.com/zhuhengji2/caipingtu-bot/main/install.ps1 | iex`
+>
+> 想先下载脚本看一眼再执行（更稳妥，也避开 PowerShell 执行策略限制）：
+> `.\install.ps1 -SkipModel` 若提示"禁止运行脚本"，改用
+> `powershell -ExecutionPolicy Bypass -File .\install.ps1`
+
 不想跑脚本？也可以手动装：
 
 ```bash

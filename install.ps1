@@ -16,6 +16,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+$ProgressPreference = "SilentlyContinue"
 $Repo = "zhuhengji2/caipingtu-bot"
 $Branch = "main"
 $Sources = @(
