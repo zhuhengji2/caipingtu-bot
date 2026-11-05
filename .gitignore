@@ -1,0 +1,22 @@
+# 模型权重（208MB，用 download_model.py 下载）
+models/*.onnx
+models/*.part*
+
+# 客户项目素材，不入库
+reference/*.jpg
+reference/*.png
+reference/*.jpeg
+samples/*
+!samples/.gitkeep
+
+# 生成产物
+output/
+generated-images/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+Thumbs.db
